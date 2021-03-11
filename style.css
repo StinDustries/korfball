@@ -11,13 +11,7 @@ h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 85%;
-}
-h1{
-  color: firebrick;
-  text-decoration-style: wavy;
-  text-decoration-color: cornflowerblue;
-  text-decoration: overline underline;
+  width: 100%;
 }
 h2{
   font-family: fantasy;
