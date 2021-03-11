@@ -15,7 +15,9 @@ h2{
   color: white;
 }
 a{
-  font-family: times;
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 img {
