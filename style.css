@@ -2,10 +2,7 @@ body {
   background: white;
 }
 p {
-  color: rgb(155,135,12);
-}
-h1 {
-  font-weight: bold;
+  color: black;
 }
 .center {
   display: block;
