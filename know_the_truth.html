@@ -6,35 +6,24 @@
       Oqj odskbr rthc wns sqj:
       /ybrc_hvh_zfiwn-->
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript"> 
-        var opacity = 0; 
-        var intervalID = 0; 
-        window.onload = fadeIn; 
-  
-        function fadeIn() { 
-            setInterval(show(document.getElementById("body")), 200); 
-        } 
-  
-        function show(body) { 
-            opacity = Number(window.getComputedStyle(body) 
-                             .getPropertyValue("opacity")); 
-            if (opacity < 1) { 
-                opacity = opacity + 0.1; 
-                body.style.opacity = opacity 
-            } else { 
-                clearInterval(intervalID); 
-            } 
-        } 
+    <script> 
+      $(document).ready(function(){
+      $("#div1").fadeIn();
+      $("#div2").fadeIn("slow");
+      $("#div3").fadeIn(3000);
+     });
+    });
     </script> 
   </head>
   <body id="body" style="opacity: 0;">
     <style>
     </style>
     <div class="main">
-    <h1 class="middle">All you can see</h1>
-      <h1 class="middle">All you can hear</h1>
-      <h1 class="middle">Is based on perception</h1>
+    <h1 class="middle" id="div1">All you can see</h1>
+      <h1 class="middle" id="div2">All you can hear</h1>
+      <h1 class="middle" id="div3">Is based on perception</h1>
       <h1 class="middle">And handled by the brain</h1>
       <h1 class="middle">But the brain can be deceived</h1>
       <h1 class="middle">So I guess the question is</h1>
