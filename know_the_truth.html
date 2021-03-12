@@ -13,11 +13,10 @@
         window.onload = fadeIn; 
   
         function fadeIn() { 
-            setInterval(show, 200); 
+            setInterval(show(document.getElementById("body")), 200); 
         } 
   
-        function show() { 
-            var body = document.getElementById("body"); 
+        function show(body) { 
             opacity = Number(window.getComputedStyle(body) 
                              .getPropertyValue("opacity")); 
             if (opacity < 1) { 
