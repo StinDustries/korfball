@@ -7,8 +7,29 @@
       /ybrc_hvh_zfiwn-->
   <head>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"> 
+        var opacity = 0; 
+        var intervalID = 0; 
+        window.onload = fadeIn; 
+  
+        function fadeIn() { 
+            setInterval(show, 200); 
+        } 
+  
+        function show() { 
+            var body = document.getElementById("body"); 
+            opacity = Number(window.getComputedStyle(body) 
+                             .getPropertyValue("opacity")); 
+            if (opacity < 1) { 
+                opacity = opacity + 0.1; 
+                body.style.opacity = opacity 
+            } else { 
+                clearInterval(intervalID); 
+            } 
+        } 
+    </script> 
   </head>
-  <body>
+  <body id="body">
     <style>
     </style>
     <div class="main">
