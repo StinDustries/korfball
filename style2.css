@@ -33,6 +33,11 @@ img {
   text-align: center;
 }
 
+.realbig{
+  font-size: 3.0em;
+  margin-top: 1.0em;
+  margin-bottom: 1.0em;
+
 .main {
   padding: 0px 10px;
 }
